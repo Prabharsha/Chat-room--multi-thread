@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="clientAnchorPaneContext" prefHeight="475.0" prefWidth="600.0" style="-fx-background-color: #b8e994;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClientFormController">
+    <children>
+        <Label fx:id="lblClient" layoutX="450.0" layoutY="14.0" text="Chat Room" textFill="#17005b">
+            <font>
+                <Font name="Bell MT Bold" size="25.0" />
+            </font>
+        </Label>
+        <Separator layoutX="28.0" layoutY="54.0" prefHeight="0.0" prefWidth="559.0" />
+        <TextArea fx:id="txtArea" layoutX="13.0" layoutY="69.0" prefHeight="244.0" prefWidth="574.0" />
+        <TextField fx:id="txtClientMassage" layoutX="28.0" layoutY="376.0" prefHeight="77.0" prefWidth="458.0" />
+      <Label fx:id="lblClient1" layoutX="28.0" layoutY="345.0" text="Message">
+         <font>
+            <Font name="Courier New Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="498.0" layoutY="399.0" mnemonicParsing="false" onAction="#sendOnAction" prefHeight="31.0" prefWidth="82.0" style="-fx-background-color: green;" text="Send" textFill="WHITE" />
+    </children>
+
+</AnchorPane>
